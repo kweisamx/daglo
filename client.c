@@ -63,7 +63,7 @@ int main(int argc,char *argv[])
     Element *nei_start =NULL;
     Element *nei_i =NULL;
     Element *nei_next = NULL;
-    for(int j =0;j<strlen(nenode)-1;i=next)
+    for(int j =0;j<strlen(nenode)-1;nei_i=nei_next)
     {
         int  a= nenode[j]-'0';
  //       printf("nenode = %i\n", a);
@@ -74,7 +74,7 @@ int main(int argc,char *argv[])
             nei_i->next =nei_next;
         j++;
     }
-    display(start);
+    display(nei_start);
     //printf("%s len %d\n",argv[1],(int)strlen(nenode));
 
 
